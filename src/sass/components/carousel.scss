@@ -1,0 +1,30 @@
+.custom-container {
+  background-color: #f7f8f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .carousel {
+    height: 500px;
+    width: 750px;
+    .carousel-inner {
+      border-radius: 15px;
+    }
+    img {
+      width: 750px;
+      height: 500px;
+      object-fit: cover;
+    }
+  }
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  color: #868686;
+  font-size: 38px;
+}
+.carousel-control-next:focus,
+.carousel-control-next:hover,
+.carousel-control-prev:focus,
+.carousel-control-prev:hover {
+  color: #e8e8e8;
+}
