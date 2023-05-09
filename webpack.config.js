@@ -9,6 +9,7 @@ module.exports = {
   mode: 'development',
   entry: {
     app: './src/main.js',
+    'js/productCarousel': './src/js/productCarousel.js',
   },
   output: {
     path: path.resolve(__dirname, '/dist'),
@@ -79,7 +80,7 @@ module.exports = {
     ],
   },
   plugins: [
-    new CleanWebpackPlugin(),
+    new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './src/pages/index.html',
@@ -109,6 +110,11 @@ module.exports = {
       filename: 'components/carousel.html',
       template: './src/components/carousel.html',
     }),
+    new HtmlWebpackPlugin({
+      filename: 'components/productCarousel.html',
+      template: './src/components/productCarousel.html',
+      chunks: ['js/productCarousel'],
+    }),
     new HtmlWebpackPartialsPlugin({
       path: path.join(__dirname, './src/components/navbar.html'),
       location: 'navbar',
@@ -132,7 +138,12 @@ module.exports = {
     new HtmlWebpackPartialsPlugin({
       path: path.join(__dirname, './src/components/carousel.html'),
       location: 'carousel',
-      template_filename: ['index.html', 'product.html'],
+      template_filename: ['index.html'],
+    }),
+    new HtmlWebpackPartialsPlugin({
+      path: path.join(__dirname, './src/components/productCarousel.html'),
+      location: 'productCarousel',
+      template_filename: ['product.html'],
     }),
     new MiniCssExtractPlugin(),
     new CssMinimizerPlugin(),

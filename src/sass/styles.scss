@@ -1,13 +1,5 @@
-@import './components/components';
-.custom-card-services {
-  box-shadow: 0 0 15px #eef0ea;
-  border-radius: 15px;
-  background-color: #fff;
-  padding: 20px 30px 40px;
-  .row div:not(:first-child) {
-    border-right: 1px solid #eef0ea;
-  }
-}
+@import './components';
+@import 'pages';
 
 footer {
   padding: 20px 0;
@@ -30,14 +22,5 @@ footer {
       box-shadow: none;
       background-color: #4e4e4e;
     }
-  }
-}
-
-.custom-card-body {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  .btn {
-    width: 50%;
   }
 }

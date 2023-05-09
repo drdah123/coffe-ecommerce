@@ -1,0 +1,55 @@
+.brown {
+  background: #de5c0040;
+}
+
+.black {
+  background: #212121;
+  color: #fff !important;
+}
+.gray {
+  background: #6c6c6c;
+}
+.reviews-container {
+  margin: 40px auto;
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
+  padding-top: 30px;
+  > div:not(:last-child) {
+    border-bottom: 1px solid gray;
+  }
+  .title {
+    padding: 15px 0;
+    border-bottom: 1px solid gray;
+    width: 200px;
+    font-weight: 400;
+  }
+
+  .card {
+    flex-direction: row;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 10px 0;
+
+    img {
+      height: 100px;
+      width: 100px;
+      object-fit: cover;
+    }
+  }
+}
+.similar-products-container {
+  .card {
+    background: transparent;
+  }
+}
+.ratings-container .fa-star {
+  color: orange;
+}
+.custom-title {
+  margin-bottom: 20px;
+  h4 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+  }
+}

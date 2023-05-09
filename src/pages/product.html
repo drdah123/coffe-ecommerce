@@ -1,10 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>المنتج</title>
   </head>
-  <body></body>
+  <body>
+    <navbar></navbar>
+    <main class="container">
+      <productCarousel></productCarousel>
+      <!-- بداية اراء المشترين-->
+      <section class="reviews-container">
+        <h3 class="title">اراء المشترين</h3>
+        <div class="my-3">
+          <div class="card mb-3">
+            <img
+              src="../assets/pexels-simon-robben-614810.jpg"
+              class="rounded"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">عبدالرحمن ابراهيم</h5>
+              <div class="ratings-container">
+                <i class="fa-solid fa-star active"></i>
+                <i class="fa-solid fa-star active"></i>
+                <i class="fa-solid fa-star active"></i>
+                <i class="fa-solid fa-star active"></i>
+                <i class="fa-solid fa-star active"></i>
+              </div>
+              <p class="card-text">منتج لذيذ جداً انصح بشراءه</p>
+            </div>
+          </div>
+        </div>
+        <div class="my-3">
+          <div class="card mb-3">
+            <img
+              src="../assets/pexels-pixabay-220453.jpg"
+              class="rounded"
+              alt="..."
+            />
+
+            <div class="card-body">
+              <h5 class="card-title">صالح طارق</h5>
+              <div class="ratings-container">
+                <i class="fa-solid fa-star active"></i>
+                <i class="fa-solid fa-star active"></i>
+                <i class="fa-solid fa-star active"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <p class="card-text">قهوة جيدة لكن ليست نوعي المفضل</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- نهاية اراء المشترين -->
+      <!-- بداية منتجات مشابهة -->
+      <section class="similar-products-container my-5">
+        <div
+          class="custom-title d-flex justify-content-center align-items-center"
+        >
+          <h4 class="text-center">منتجات مشابهة</h4>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 my-3">
+            <div class="card">
+              <img
+                src="../assets/akis-fisaris-2mZWydjhULk-unsplash.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <h5 class="card-title">القهوة التركية</h5>
+                  <p>$50</p>
+                </div>
+                <div class="ratings-container">
+                  <i class="fa-solid fa-star active"></i>
+                  <i class="fa-solid fa-star active"></i>
+                  <i class="fa-solid fa-star active"></i>
+                  <i class="fa-solid fa-star active"></i>
+                  <i class="fa-solid fa-star active"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 my-3">
+            <div class="card">
+              <img
+                src="../assets/alex-padurariu-tXYg4Zx7kSU-unsplash.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <h5 class="card-title">القهوة السوداء</h5>
+                  <p>$30</p>
+                </div>
+                <div class="ratings-container">
+                  <i class="fa-solid fa-star active"></i>
+                  <i class="fa-solid fa-star active"></i>
+                  <i class="fa-solid fa-star active"></i>
+                  <i class="fa-solid fa-star active"></i>
+                  <i class="fa-solid fa-star active"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 my-3">
+            <div class="card">
+              <img
+                src="../assets/ammie-ngo-WJzyp64NmyA-unsplash.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <h5 class="card-title">
+                    الكابتشينو (بالإيطالية: Cappuccino)
+                  </h5>
+                  <p>$20</p>
+                </div>
+                <div class="ratings-container">
+                  <i class="fa-solid fa-star active"></i>
+                  <i class="fa-solid fa-star active"></i>
+                  <i class="fa-solid fa-star active"></i>
+                  <i class="fa-solid fa-star active"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- نهاية منتجات مشابهة -->
+    </main>
+    <help></help>
+  </body>
 </html>
