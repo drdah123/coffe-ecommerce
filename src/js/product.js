@@ -66,8 +66,10 @@ function carouselItems() {
 const children = carouselItems();
 const pageColor = rightData('brown', 'black', 'gray');
 
-$('#carousel-items-containers').append(children.carouselItems);
-$(children.info).insertBefore('#add-cart-btn');
+$('document').ready(() => {
+  $('#carousel-items-containers').append(children.carouselItems);
+  $(children.info).insertBefore('#add-cart-btn');
 
-$('#product-indicators').append(children.indicators);
-$('body').addClass(pageColor);
+  $('#product-indicators').append(children.indicators);
+  $('body').addClass(pageColor);
+});
