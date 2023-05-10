@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "latest",
+    "@googlemaps/markerclusterer": "^2.0.15",
     "@popperjs/core": "^2.11.7",
     "bootstrap": "^5.2.3",
     "clean-webpack-plugin": "^4.0.0",

@@ -1,10 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>اتصل بنا</title>
   </head>
-  <body></body>
+  <body>
+    <navbar> </navbar>
+    <div id="map"></div>
+    <div class="container my-5">
+      <div class="row g-3 justify-content-center">
+        <div class="col-12 col-md-4">
+          <div>
+            <h5 class="h5">ساعات العمل</h5>
+            <ul>
+              <li>من الاحد حتى الخميس</li>
+              <li>من الساعة 8 صباحاً حتى 2 ظهرً</li>
+            </ul>
+          </div>
+          <h5 class="h5">معلومات الاتصال</h5>
+          <div class="card-body">
+            <div>
+              <i class="fas fa-phone fa-lg"></i>
+              <span dir="ltr">+966 555 959 555</span>
+            </div>
+            <div>
+              <i class="fas fa-envelope fa-lg"></i>
+              ahmed@coffeecomerce.com
+            </div>
+            <div>
+              <i class="fas fa-map-marker-alt fa-lg"></i>
+              العنوان: الرياض-شارع الملك فهد-مجمع الخالدية
+            </div>
+          </div>
+        </div>
+
+        <form
+          action=""
+          class="col-12 col-md-6 needs-validation"
+          id="contact-form"
+          novalidate
+        >
+          <div class="mb-3">
+            <label for="emailContact" class="form-label"
+              >البريد الالكتروني</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="emailContact"
+              placeholder="name@example.com"
+              required
+            />
+            <div class="invalid-feedback">لقد نسيت ادخال الايميل صحيحاً</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="contentTextarea" class="form-label"
+              >محتوى الرسالة</label
+            >
+            <textarea
+              class="form-control"
+              id="contentTextarea"
+              rows="3"
+              required
+            ></textarea>
+            <div class="invalid-feedback">لقد نسيت ادخال الرسالة</div>
+            <button type="submit" class="btn btn-secondary mt-2">ارسال</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- شيفرات خريطة قوقل -->
+    <help></help>
+  </body>
 </html>

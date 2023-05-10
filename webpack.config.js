@@ -9,7 +9,9 @@ module.exports = {
   mode: 'development',
   entry: {
     app: './src/main.js',
-    'js/productCarousel': './src/js/productCarousel.js',
+    'js/product': './src/js/product.js',
+    'js/contactUs': './src/js/contactUs.js',
+    'js/distributors': './src/js/distributors.js',
   },
   output: {
     path: path.resolve(__dirname, '/dist'),
@@ -89,14 +91,17 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'product.html',
       template: './src/pages/product.html',
+      chunks: ['app', 'js/product'],
     }),
     new HtmlWebpackPlugin({
       filename: 'distributors.html',
       template: './src/pages/distributors.html',
+      chunks: ['app', 'js/distributors'],
     }),
     new HtmlWebpackPlugin({
       filename: 'contactUs.html',
       template: './src/pages/contactUs.html',
+      chunks: ['app', 'js/contactUs'],
     }),
     new HtmlWebpackPlugin({
       filename: 'components/navbar.html',
@@ -113,7 +118,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'components/productCarousel.html',
       template: './src/components/productCarousel.html',
-      chunks: ['js/productCarousel'],
     }),
     new HtmlWebpackPartialsPlugin({
       path: path.join(__dirname, './src/components/navbar.html'),
