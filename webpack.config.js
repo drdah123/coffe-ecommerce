@@ -104,6 +104,11 @@ module.exports = {
       chunks: ['app', 'js/contactUs'],
     }),
     new HtmlWebpackPlugin({
+      filename: 'aboutUs.html',
+      template: './src/pages/aboutUs.html',
+      chunks: ['app'],
+    }),
+    new HtmlWebpackPlugin({
       filename: 'components/navbar.html',
       template: './src/components/navbar.html',
     }),
@@ -127,6 +132,7 @@ module.exports = {
         'product.html',
         'distributors.html',
         'contactUs.html',
+        'aboutUs.html',
       ],
     }),
     new HtmlWebpackPartialsPlugin({
@@ -137,6 +143,7 @@ module.exports = {
         'product.html',
         'distributors.html',
         'contactUs.html',
+        'aboutUs.html',
       ],
     }),
     new HtmlWebpackPartialsPlugin({

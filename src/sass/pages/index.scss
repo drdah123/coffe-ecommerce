@@ -1,4 +1,11 @@
+@mixin product-bg($bg) {
+  background-color: $bg;
+  nav.navbar {
+    background-color: #ffffff7d;
+  }
+}
 @import './product.scss';
 @import './home.scss';
 @import './contactUs.scss';
 @import './distributors.scss';
+@import './aboutUs.scss';

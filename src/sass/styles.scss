@@ -12,6 +12,21 @@ footer {
     border-bottom: 1px solid gray;
     padding: 10px 20px;
   }
+  .social-media-links {
+    color: #1877f2;
+    & a:first-child {
+      color: #1877f2;
+    }
+    & a:nth-child(2) {
+      color: #1da1f2;
+    }
+    & a:last-child {
+      color: #ff5a5f;
+    }
+    a:hover {
+      opacity: 0.75;
+    }
+  }
   #subscribeInput {
     background-color: #3b3b3b;
     border: none;
@@ -30,5 +45,10 @@ footer {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+  }
+}
+.navbar {
+  .nav-item.active a {
+    border-bottom: gray 1px solid;
   }
 }

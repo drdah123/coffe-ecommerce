@@ -1,13 +1,13 @@
 .brown {
-  background: #de5c0040;
+  @include product-bg(#de5c0040);
 }
 
 .black {
-  background: #212121;
   color: #fff !important;
+  @include product-bg(#212121);
 }
 .gray {
-  background: #6c6c6c;
+  @include product-bg(#6c6c6c);
 }
 .reviews-container {
   margin: 40px auto;

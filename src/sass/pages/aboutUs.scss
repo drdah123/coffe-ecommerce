@@ -1,0 +1,16 @@
+.about-banner-img {
+  background: url('../assets/pexels-juan-mendez-1578604.jpg') no-repeat center /
+    cover;
+  height: 50vh;
+}
+.custom-employees-container {
+  .card-img {
+    object-fit: cover;
+    width: 50%;
+    height: 100%;
+  }
+  .card-subtitle {
+    margin-bottom: 5px;
+    border-bottom: 1px solid;
+  }
+}
